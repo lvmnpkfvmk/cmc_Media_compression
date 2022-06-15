@@ -18,8 +18,9 @@ make # нужно быть в папке build
 ```
 5. Тестирующий скрипт:
 ```sh
-cd .. # поднимаемся из build в корневую папку архиватора
-tests/test_all.sh - представленный алгоритм
-tests/testallz - default zip
+cd ../tests # поднимаемся из build в корневую папку архиватора
+chmod +x testallz test_all.sh
+test_all.sh - представленный алгоритм
+testallz - default zip
 ```
 Суммарный коэфициент сжатия в среднем на 15% лучше стандартного zip.
